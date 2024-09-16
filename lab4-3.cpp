@@ -1,5 +1,5 @@
 //Lab4-3.cpp - displays a salesperson's commission
-//Created/revised by <your name> on <current date>
+//Created/revised by kaelee storozuk on 9/16/24
 
 #include <iostream>
 using namespace std;
