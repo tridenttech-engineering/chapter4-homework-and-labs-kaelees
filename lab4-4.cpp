@@ -7,15 +7,19 @@ using namespace std;
 
 int main ()
 {
-} //end of main function
-cin >> height;
-cout << "Height: ";
-cout << "Radius: ";
-cout << "Volume: " << volume << endl;
-double height   = 0.0;
-double radius   = 0.0;
-double volume   = 0.0;
-int main()
+
+double Height   = 0.0;
+double Radius   = 0.0;
+double Volume   = 0.0;
+const double PI = 3.14;
+ cout << "Height: ";
+ cin >> Height; 
+ cout << "Radius: "; 
+ cin >> Radius;
+
+Volume = PI * Radius * Radius * Height;
+cout << "Volume: " << Volume << endl;
+
 return 0;
-using namespace std;
-volume = PI * radius * radius * height;
+  
+}// end of main function
