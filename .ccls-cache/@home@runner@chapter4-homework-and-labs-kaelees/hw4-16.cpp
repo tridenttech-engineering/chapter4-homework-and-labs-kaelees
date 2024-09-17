@@ -1,5 +1,5 @@
 //Advanced16.cpp
-//Created/revised by kaelee storozuk on 9/16/24
+//Created/revised by <your name> on <current date>
 
 #include <iostream>
 #include <iomanip>
@@ -7,26 +7,27 @@ using namespace std;
 
 int main()
 {
+  //declare constant and variables
+  const double increase = 1.05;
   double store1Int = 0.0;
   double store2Int = 0.0;
-  double totalInt = 0.0;
-  double store1 = 0.0;
-  double store2 = 0.0;
-  const double increase = 0.62;
+  double totalInt  = 0.0;
 
   cout << "Store 1 sales: ";
-  cin >> store1;
+  cin >> store1Int;
   cout << "Store 2 sales: ";
-  cin >> store2;
+  cin >> store2Int;
 
-  store1Int = static_cast<int>(store1 / 100.0 * increase * 100 + .5);
-  store2Int = static_cast<int>(store2 / 100.0 * increase * 100 + .5);
+  store1Int = static_cast<int>(store1Int * increase * 100 + .50);
+  store2Int = static_cast<int>(store2Int * increase * 100 + .50);
   totalInt = store1Int + store2Int;
-  totalInt = totalInt / 2;
 
-  cout << "Total amount: $" << totalInt << endl;
-  
-  
+  cout << fixed << setprecision(2) << endl;
+  cout << store1Int / 100.0 << " --->Store 1" << endl;
+  cout << store2Int / 100.0 << " --->Store 2" << endl;
+  cout << totalInt / 100.0 << "-----------------" << endl;
+  cout << totalInt << " --->Total" << endl;
+
   return 0;
 }	//end of main function
 
