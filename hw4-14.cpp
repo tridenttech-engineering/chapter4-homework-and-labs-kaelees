@@ -29,15 +29,15 @@ int main() {
 
   cout << "Total pizzas sold: " << totalPizzas << endl;
 
-  smallPizzasPercent = smallPizzas / totalPizzas * 100;
-  mediumPizzasPercent = mediumPizzas / totalPizzas * 100;
-  largePizzasPercent = largePizzas / totalPizzas * 100;
-  familyPizzasPercent = familyPizzas / totalPizzas * 100;
+  smallPizzasPercent = static_cast<double>(smallPizzas) / totalPizzas * 100;
+  mediumPizzasPercent = static_cast<double>(mediumPizzas) / totalPizzas * 100;
+  largePizzasPercent = static_cast<double>(largePizzas) / totalPizzas * 100;
+  familyPizzasPercent = static_cast<double>(familyPizzas) / totalPizzas * 100;
   
-  cout << "Small pizzas contribution: " << smallPizzasPercent << endl;
-  cout << "Medium pizzas contribution: " << mediumPizzasPercent << endl;
-  cout << "Large pizzas contribution: " << largePizzasPercent << endl;
-  cout << "Family pizzas contribution: " << familyPizzasPercent << endl;
+  cout << "Small pizzas contribution: " << smallPizzasPercent << "%" << endl;
+  cout << "Medium pizzas contribution: " << mediumPizzasPercent << "%" << endl;
+  cout << "Large pizzas contribution: " << largePizzasPercent << "%" << endl;
+  cout << "Family pizzas contribution: " << familyPizzasPercent << "% "<< endl;
   
 
   return 0;
